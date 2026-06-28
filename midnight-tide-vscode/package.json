@@ -1,0 +1,36 @@
+{
+  "name": "midnight-tide",
+  "displayName": "Midnight Tide",
+  "description": "A cool-blue dark theme on #151719. Teal accents, deuteranopia-safe diff palette, amber-and-yellow error signals.",
+  "version": "1.0.2",
+  "publisher": "Chelayel",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "blue",
+    "teal",
+    "colorblind",
+    "deuteranopia"
+  ],
+  "icon": "icon.png",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Midnight Tide",
+        "uiTheme": "vs-dark",
+        "path": "./themes/MidnightTide-color-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chelayel/Midnight-Tide.git"
+  }
+}

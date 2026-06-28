@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+  <rect width="40" height="40" rx="6" ry="6" fill="#151719"/>
+  <mask id="mt-crescent">
+    <rect width="40" height="40" fill="black"/>
+    <circle cx="29.6" cy="10.8" r="4" fill="white"/>
+    <circle cx="31.3" cy="10.6" r="4" fill="black"/>
+  </mask>
+  <rect width="40" height="40" fill="#A5F3FC" mask="url(#mt-crescent)"/>
+  <path d="M0,23 Q10,20 20,23 Q30,26 40,23 L40,40 L0,40 Z" fill="#0E7490"/>
+  <path d="M0,28 Q10,26 20,28 Q30,30 40,28 L40,40 L0,40 Z" fill="#0891B2"/>
+  <path d="M0,28 Q10,26 20,28 Q30,30 40,28" stroke="#7DD3FC" stroke-width="0.4" stroke-linecap="round" fill="none"/>
+</svg>

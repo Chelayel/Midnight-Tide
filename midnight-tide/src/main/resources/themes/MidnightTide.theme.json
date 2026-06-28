@@ -1,0 +1,332 @@
+{
+  "name": "Midnight Tide",
+  "dark": true,
+  "author": "midnight-tide",
+  "editorScheme": "/themes/MidnightTide.xml",
+  "parentTheme": "Islands Dark",
+  "colors": {
+    "_comment_bg": "Backgrounds: only override what should differ from Islands Dark parent",
+    "bg.editor": "#151719",
+    "bg.tool": "#151719",
+    "bg.panel": "#1A1D21",
+    "bg.elevated": "#1F2226",
+    "bg.input": "#1C1F23",
+    "bg.selected": "#2A3548",
+    "bg.hover": "#1F2429",
+    "_comment_borders": "All sidebar/toolbar borders fully transparent for Islands floating look",
+    "border.subtle": "#1F2226",
+    "border.default": "#2A2E33",
+    "border.strong": "#3A3E44",
+    "border.transparent": "#15171900",
+    "_comment_fg": "Cool-tinted neutrals for legibility on the cool background",
+    "fg.primary": "#E4E4E7",
+    "fg.secondary": "#A1A1AA",
+    "fg.muted": "#71717A",
+    "fg.faint": "#3F3F46",
+    "_comment_accent": "Blue-dominant + purple keywords. Amber/yellow stand in for red signals.",
+    "accent.teal": "#0891B2",
+    "accent.sky": "#7DD3FC",
+    "accent.blue": "#60A5FA",
+    "accent.lightblue": "#BFDBFE",
+    "accent.lavender": "#A5F3FC",
+    "accent.purple": "#C084FC",
+    "accent.coral": "#E88F89",
+    "_comment_status": "Coral for true errors (distinct from amber warnings). Matches FILESTATUS_UNKNOWN.",
+    "status.warning": "#FACC15",
+    "status.error": "#E88F89",
+    "link": "#60A5FA",
+    "link.hover": "#A5F3FC",
+    "_comment_search": "Saturated teal for search matches \u2014 pops against editor bg AND selection bg",
+    "search.match": "#155E75",
+    "search.write": "#0E7490"
+  },
+  "ui": {
+    "_comment_wildcard": "Minimal wildcard \u2014 only selection/border/error. Backgrounds inherit from Islands Dark parent.",
+    "*": {
+      "borderColor": "border.subtle",
+      "disabledBorderColor": "border.subtle",
+      "selectionBackground": "bg.selected",
+      "selectionForeground": "fg.primary",
+      "selectionInactiveBackground": "bg.hover",
+      "selectionInactiveForeground": "fg.primary",
+      "infoForeground": "fg.secondary",
+      "lineSeparatorColor": "border.subtle",
+      "separatorColor": "border.subtle",
+      "errorForeground": "status.error",
+      "acceleratorForeground": "fg.secondary",
+      "acceleratorSelectionForeground": "fg.primary",
+      "linkColor": "link",
+      "linkForeground": "link",
+      "linkHoverColor": "link.hover",
+      "linkVisitedColor": "accent.purple",
+      "linkPressedColor": "link.hover",
+      "linkSecondaryColor": "fg.secondary"
+    },
+    "ActionButton": {
+      "hoverBackground": "bg.hover",
+      "hoverBorderColor": "border.default",
+      "pressedBackground": "bg.selected",
+      "pressedBorderColor": "border.strong"
+    },
+    "Borders": {
+      "color": "border.subtle",
+      "ContrastBorderColor": "border.transparent"
+    },
+    "Button": {
+      "focusedBorderColor": "accent.teal",
+      "default": {
+        "background": "accent.teal",
+        "foreground": "bg.editor",
+        "startBackground": "accent.teal",
+        "endBackground": "accent.teal",
+        "startBorderColor": "accent.teal",
+        "endBorderColor": "accent.teal",
+        "focusedBorderColor": "accent.teal",
+        "focusColor": "accent.teal"
+      }
+    },
+    "CheckBox": {
+      "select": "accent.teal",
+      "focusedBorderColor": "accent.teal"
+    },
+    "ComboBox": {
+      "background": "bg.input",
+      "nonEditableBackground": "bg.input",
+      "ArrowButton.iconColor": "fg.secondary"
+    },
+    "CompletionPopup": {
+      "matchForeground": "accent.teal",
+      "matchSelectionForeground": "accent.teal",
+      "infoForeground": "fg.muted",
+      "selectionInfoForeground": "fg.secondary"
+    },
+    "Component": {
+      "borderColor": "border.default",
+      "focusedBorderColor": "accent.teal",
+      "focusColor": "accent.teal",
+      "errorFocusColor": "status.error",
+      "inactiveErrorFocusColor": "status.error",
+      "warningFocusColor": "status.warning",
+      "inactiveWarningFocusColor": "status.warning"
+    },
+    "_comment_editor": "The user-specified #151719 editor background \u2014 this is THE override that matters",
+    "Editor": {
+      "background": "bg.editor",
+      "foreground": "fg.primary",
+      "shortcutForeground": "accent.teal",
+      "SearchField.background": "bg.input",
+      "SearchField.foreground": "accent.coral"
+    },
+    "EditorPane": {
+      "background": "bg.editor",
+      "inactiveBackground": "bg.editor"
+    },
+    "EditorTabs": {
+      "underlinedTabForeground": "fg.primary",
+      "underlineColor": "accent.teal",
+      "underlineHeight": 2,
+      "borderColor": "border.transparent"
+    },
+    "DefaultTabs": {
+      "underlineColor": "accent.teal",
+      "underlineHeight": 2,
+      "inactiveUnderlineColor": "border.strong",
+      "borderColor": "border.transparent"
+    },
+    "FileColor": {
+      "Yellow": "#3D3514",
+      "Green": "#142A3D",
+      "Blue": "#142A3D",
+      "Violet": "#2A1A3D",
+      "Orange": "#3D3514",
+      "Rose": "#142A3D"
+    },
+    "Hyperlink": {
+      "linkColor": "link",
+      "linkHoverColor": "link.hover",
+      "linkVisitedColor": "accent.purple",
+      "linkSecondaryColor": "fg.secondary"
+    },
+    "Label": {
+      "errorForeground": "status.error",
+      "infoForeground": "fg.secondary"
+    },
+    "Link": {
+      "activeForeground": "link",
+      "hoverForeground": "link.hover",
+      "pressedForeground": "link.hover",
+      "visitedForeground": "accent.purple",
+      "secondaryForeground": "fg.secondary"
+    },
+    "_comment_toolbar_seams": "Kill every potential seam in the top toolbar. Project color gradient should flow without a vertical break.",
+    "MainToolbar": {
+      "borderColor": "border.transparent",
+      "Icon.hoverBackground": "bg.hover",
+      "Dropdown.hoverBackground": "bg.hover"
+    },
+    "MainMenu": {
+      "borderColor": "border.transparent"
+    },
+    "MenuBar": {
+      "borderColor": "border.transparent"
+    },
+    "NavBar": {
+      "borderColor": "border.transparent"
+    },
+    "ToolBar": {
+      "borderHandleColor": "border.subtle"
+    },
+    "WindowsHeader": {
+      "borderColor": "border.transparent"
+    },
+    "_comment_search": "Saturated teal search highlights \u2014 visible against both editor bg and dark blue selection bg",
+    "SearchEverywhere": {
+      "Header.background": "bg.panel",
+      "SearchField.background": "bg.panel",
+      "SearchField.foreground": "accent.coral",
+      "SearchField.borderColor": "border.subtle",
+      "Tab.selectedBackground": "bg.selected",
+      "Tab.selectedForeground": "fg.primary",
+      "List.separatorColor": "border.subtle",
+      "List.separatorForeground": "fg.muted",
+      "Advertiser.foreground": "fg.muted"
+    },
+    "SearchMatch": {
+      "startBackground": "search.match",
+      "endBackground": "search.write"
+    },
+    "Notification": {
+      "background": "bg.panel",
+      "foreground": "fg.primary",
+      "borderColor": "border.default",
+      "linkForeground": "link",
+      "linkHoverForeground": "link.hover",
+      "errorBackground": "#3D2A14",
+      "errorBorderColor": "status.error",
+      "errorForeground": "fg.primary",
+      "MoreButton.background": "bg.elevated",
+      "MoreButton.foreground": "link",
+      "MoreButton.innerBorderColor": "border.subtle",
+      "ToolWindow.warningBackground": "#3D3514",
+      "ToolWindow.warningBorderColor": "status.warning",
+      "ToolWindow.warningForeground": "fg.primary",
+      "ToolWindow.errorBackground": "#3D2A14",
+      "ToolWindow.errorBorderColor": "status.error",
+      "ToolWindow.errorForeground": "fg.primary",
+      "ToolWindow.informativeBackground": "bg.panel",
+      "ToolWindow.informativeBorderColor": "border.default",
+      "ToolWindow.informativeForeground": "fg.primary"
+    },
+    "Plugins": {
+      "SearchField.background": "bg.input",
+      "SearchField.foreground": "accent.coral",
+      "SectionHeader.foreground": "fg.secondary",
+      "Button.installBackground": "accent.teal",
+      "Button.installForeground": "bg.editor",
+      "Button.installBorderColor": "accent.teal",
+      "Button.installFillForeground": "bg.editor",
+      "Button.installFillBackground": "accent.teal",
+      "tagBackground": "bg.elevated",
+      "tagForeground": "fg.secondary"
+    },
+    "ProgressBar": {
+      "foreground": "accent.teal",
+      "progressColor": "accent.teal",
+      "indeterminateStartColor": "accent.teal",
+      "indeterminateEndColor": "accent.purple",
+      "passedColor": "accent.teal",
+      "failedColor": "status.error",
+      "passedEndColor": "accent.blue",
+      "failedEndColor": "status.error"
+    },
+    "RadioButton": {
+      "select": "accent.teal"
+    },
+    "ScrollBar": {
+      "thumbColor": "#2A2E3340",
+      "hoverThumbColor": "#3A3E44A0",
+      "trackColor": "#00000000",
+      "Mac.thumbColor": "#2A2E3340",
+      "Mac.hoverThumbColor": "#3A3E44A0",
+      "Mac.Transparent.thumbColor": "#2A2E3340",
+      "Mac.Transparent.hoverThumbColor": "#3A3E44A0",
+      "Transparent.thumbColor": "#2A2E3340",
+      "Transparent.hoverThumbColor": "#3A3E44A0"
+    },
+    "Slider": {
+      "thumbColor": "accent.teal"
+    },
+    "StatusBar": {
+      "borderColor": "border.transparent"
+    },
+    "TabbedPane": {
+      "underlineColor": "accent.teal",
+      "tabSelectionHeight": 2,
+      "disabledUnderlineColor": "border.strong"
+    },
+    "ToggleButton": {
+      "onBackground": "accent.teal",
+      "onForeground": "bg.editor"
+    },
+    "_comment_tool_window": "Tool windows get their own subtle shade for the Islands separation",
+    "ToolWindow": {
+      "background": "bg.tool",
+      "Header.background": "bg.tool",
+      "Header.inactiveBackground": "bg.tool",
+      "Header.borderColor": "border.transparent",
+      "HeaderTab.underlineColor": "accent.teal",
+      "HeaderTab.inactiveUnderlineColor": "border.strong",
+      "HeaderTab.underlineHeight": 2,
+      "Stripe.borderColor": "border.transparent"
+    },
+    "Tree": {
+      "background": "bg.tool",
+      "modifiedItemForeground": "accent.blue",
+      "errorForeground": "status.error"
+    },
+    "ValidationTooltip": {
+      "errorBackground": "#3D2A14",
+      "errorBorderColor": "status.error",
+      "warningBackground": "#3D3514",
+      "warningBorderColor": "status.warning"
+    },
+    "_comment_vcs": "VCS chrome (refs, history) \u2014 the actual diff colors live in the editor scheme XML",
+    "VersionControl": {
+      "GitCommits.graphColor": "fg.muted",
+      "RefLabel.foreground": "fg.secondary",
+      "RefLabel.backgroundBase": "bg.elevated"
+    }
+  },
+  "icons": {
+    "ColorPalette": {
+      "_comment": "Action and object icon palette: blue/teal/yellow for colorblind-safe statuses",
+      "Actions.Grey": "#71717A",
+      "Actions.Red": "#E88F89",
+      "Actions.Yellow": "#FACC15",
+      "Actions.Green": "#0891B2",
+      "Actions.Blue": "#0891B2",
+      "Actions.GreyInline": "#71717A",
+      "Actions.GreyInline.Dark": "#A1A1AA",
+      "Objects.Grey": "#71717A",
+      "Objects.Blue": "#0891B2",
+      "Objects.Green": "#7DD3FC",
+      "Objects.Yellow": "#FACC15",
+      "Objects.YellowDark": "#F59E0B",
+      "Objects.Purple": "#C084FC",
+      "Objects.Pink": "#E88F89",
+      "Objects.Red": "#E88F89",
+      "Objects.RedStatus": "#E88F89",
+      "Objects.GreenAndroid": "#0891B2",
+      "Objects.BlackText": "#E4E4E7",
+      "_comment_checkbox": "Checkbox SVG palette \u2014 checked state painted teal to match action button",
+      "Checkbox.Background.Default.Dark": "#1F2226",
+      "Checkbox.Border.Default.Dark": "#3A3E44",
+      "Checkbox.Background.Selected.Dark": "#0891B2",
+      "Checkbox.Border.Selected.Dark": "#0891B2",
+      "Checkbox.Foreground.Selected.Dark": "#151719",
+      "Checkbox.Focus.Wide.Dark": "#0891B2",
+      "Checkbox.Focus.Thin.Default.Dark": "#0891B2",
+      "Checkbox.Focus.Thin.Selected.Dark": "#0891B2"
+    }
+  }
+}
