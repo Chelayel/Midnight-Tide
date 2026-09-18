@@ -4,6 +4,7 @@
   "description": "A cool-blue dark theme on #151719. Teal accents, deuteranopia-safe diff palette, amber-and-yellow error signals.",
   "version": "1.0.2",
   "publisher": "Chelayel",
+  "author": { "name": "Chelayel", "url": "https://www.chelayel.com" },
   "license": "MIT",
   "engines": {
     "vscode": "^1.74.0"

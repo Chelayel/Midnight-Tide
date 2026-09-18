@@ -101,4 +101,4 @@ To tweak: edit the JSON, reload VS Code (`Cmd+R` / `Ctrl+R`), the theme picks up
 
 ## License
 
-MIT.
+MIT. Built by [Chelayel](https://www.chelayel.com).

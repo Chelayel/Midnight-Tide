@@ -75,4 +75,4 @@ Midnight Tide controls colors only — file-tree icons are a separate plugin typ
 
 ## License
 
-MIT.
+MIT. Built by [Chelayel](https://www.chelayel.com).

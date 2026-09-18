@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.midnighttide.theme</id>
     <name>Midnight Tide</name>
-    <vendor>Chelayel</vendor>
+    <vendor url="https://www.chelayel.com">Chelayel</vendor>
     <version>1.0.2</version>
 
     <description><![CDATA[
