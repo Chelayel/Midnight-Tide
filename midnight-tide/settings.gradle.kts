@@ -5,4 +5,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "midnight-theme"
+rootProject.name = "midnight-tide"
