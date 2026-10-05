@@ -1,48 +1,54 @@
 plugins {
     id("java")
-    id("org.jetbrains.intellij.platform") version "2.1.0"
+    id("org.jetbrains.intellij.platform") version "2.17.0"
 }
 
 group = "com.midnight.theme"
-version = "1.0.2"
+// A tag builds and publishes at the tag's version (release.yml); gradle.properties
+// only labels local builds and builds off main.
+version = (findProperty("pluginVersion") as String?) ?: "0.0.0"
 
 repositories {
     mavenCentral()
     intellijPlatform {
         defaultRepositories()
-        intellijDependencies()
     }
 }
 
 dependencies {
     intellijPlatform {
-        // Target IntelliJ IDEA Community 2024.1 — themes are compatible across all
-        // JetBrains IDEs that share the same platform build.
-        intellijIdeaCommunity("2024.1")
-        instrumentationTools()
+        // IntelliJ IDEA 2025.3, the first build with the Islands Dark parent theme.
+        // Themes are compatible across every JetBrains IDE on the same platform build.
+        intellijIdea("2025.3")
     }
 }
 
 intellijPlatform {
+    instrumentCode = false
+    buildSearchableOptions = false
     pluginConfiguration {
+        version = project.version.toString()
         ideaVersion {
-            sinceBuild = "241"
+            // Not lower: the theme's parent, Islands Dark, first shipped in 2025.3.
+            sinceBuild = "253"
             untilBuild = provider { null }   // forward-compatible
         }
     }
-
+    // `./gradlew publishPlugin` with JETBRAINS_MARKETPLACE_TOKEN set (a token from
+    // https://plugins.jetbrains.com/author/me/tokens).
     publishing {
-        // token = providers.environmentVariable("PUBLISH_TOKEN")
+        token = providers.environmentVariable("JETBRAINS_MARKETPLACE_TOKEN")
+    }
+    pluginVerification {
+        ides {
+            // JetBrains' pick of IDE builds for the declared since-build range.
+            recommended()
+        }
     }
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
-}
-
-tasks {
-    wrapper {
-        gradleVersion = "8.10"
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
     }
 }

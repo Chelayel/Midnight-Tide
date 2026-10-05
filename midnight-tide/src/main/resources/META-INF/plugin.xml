@@ -2,7 +2,6 @@
     <id>com.midnighttide.theme</id>
     <name>Midnight Tide</name>
     <vendor url="https://www.chelayel.com">Chelayel</vendor>
-    <version>1.0.2</version>
 
     <description><![CDATA[
         <h2>Midnight Tide</h2>
@@ -23,12 +22,11 @@
     ]]></description>
 
     <change-notes><![CDATA[
+        <p><b>1.0.3</b> — Compatibility fixed: the plugin now declares 2025.3+ (it was listed as 2024.1+, where its Islands Dark parent theme does not exist), and it is built and verified against the current IntelliJ Platform.</p>
         <p><b>1.0.2</b> — Updated vendor/publisher to Chelayel.</p>
         <p><b>1.0.1</b> — Coral search field text; unified true-error palette around coral #E88F89 (errors no longer collide with amber warnings); lifted indent guides and caret-row; faint resting scrollbar; bright-red and bright-green terminal colors actually read as red/green; link color separated from teal accent.</p>
         <p><b>1.0.0</b> — Initial release.</p>
     ]]></change-notes>
-
-    <idea-version since-build="253"/>
 
     <depends>com.intellij.modules.platform</depends>
 
