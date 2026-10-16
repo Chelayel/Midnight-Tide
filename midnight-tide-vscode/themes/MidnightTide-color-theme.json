@@ -349,17 +349,17 @@
     "terminal.border": "#1F2226",
     "terminal.tab.activeBorder": "#0891B2",
     "terminal.ansiBlack": "#151719",
-    "terminal.ansiBrightBlack": "#3F3F46",
+    "terminal.ansiBrightBlack": "#7A7E85",
     "terminal.ansiRed": "#E88F89",
     "terminal.ansiBrightRed": "#FFA8A0",
     "terminal.ansiGreen": "#73BD79",
     "terminal.ansiBrightGreen": "#A2D9A6",
     "terminal.ansiYellow": "#FACC15",
-    "terminal.ansiBrightYellow": "#FACC15",
+    "terminal.ansiBrightYellow": "#FDE68A",
     "terminal.ansiBlue": "#60A5FA",
     "terminal.ansiBrightBlue": "#BFDBFE",
     "terminal.ansiMagenta": "#C084FC",
-    "terminal.ansiBrightMagenta": "#C084FC",
+    "terminal.ansiBrightMagenta": "#D8B4FE",
     "terminal.ansiCyan": "#0891B2",
     "terminal.ansiBrightCyan": "#A5F3FC",
     "terminal.ansiWhite": "#E4E4E7",
@@ -449,7 +449,7 @@
         "string.comment"
       ],
       "settings": {
-        "foreground": "#71717A",
+        "foreground": "#7A7E85",
         "fontStyle": "italic"
       }
     },
@@ -1226,7 +1226,7 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "comment": {
-      "foreground": "#71717A",
+      "foreground": "#7A7E85",
       "fontStyle": "italic"
     },
     "string": "#7DD3FC",

@@ -1,6 +1,6 @@
 # Midnight Tide — VS Code Theme
 
-A blue-dominant dark theme on a `#151719` cool-gray base. Color-vision-safe error and VCS palette: amber and yellow stand in for red, neutral gray for deleted lines, mustard-brown for merge conflicts — all chosen to kill red/green confusion.
+A blue-dominant dark theme on a `#151719` cool-gray base. Color-vision-safe error and VCS palette: soft coral for errors, yellow for warnings, blue for modified lines and neutral gray for deleted lines, all chosen to avoid red/green confusion.
 
 This is the VS Code port of the [Midnight Tide JetBrains theme](https://github.com/Chelayel/Midnight-Tide) — same palette, same design decisions.
 
@@ -26,19 +26,20 @@ This is the VS Code port of the [Midnight Tide JetBrains theme](https://github.c
 | Class/type names | `#A5F3FC` lavender-cyan |
 | Parameters | `#BFDBFE` pale blue (italic) |
 | `this` / `self` | `#C084FC` purple (italic) |
-| Comments | `#525861` muted gray (italic) |
+| Comments | `#7A7E85` muted gray (italic) |
 | Decorators / annotations | `#FACC15` yellow |
 
 **Status colors (red-green colorblind-safe):**
 
 | Indicator | Hex |
 |---|---|
-| Errors | `#F59E0B` amber |
+| Errors | `#E88F89` coral |
 | Warnings | `#FACC15` yellow |
 | Git added | `#73BD79` desaturated green |
 | Git modified | `#70AEFF` blue |
 | Git deleted | `#6F737A` neutral gray |
-| Git conflict | `#D69A6B` mustard-brown |
+| Git untracked | `#E88F89` coral |
+| Git conflict | `#DE6A66` deep coral |
 
 **Search matches** are saturated teal (`#155E75` for highlights, `#0E7490` for the active match) so they pop against both the editor background and the selection.
 
@@ -46,7 +47,7 @@ This is the VS Code port of the [Midnight Tide JetBrains theme](https://github.c
 
 ### From `.vsix` file
 
-1. Download `midnight-tide-1.0.0.vsix`
+1. Download `midnight-tide-vscode-1.0.4.vsix` from the [Releases page](https://github.com/Chelayel/Midnight-Tide/releases)
 2. In VS Code: open the Extensions panel, click the **`…`** menu in the top-right, choose **Install from VSIX…**, pick the file
 3. **Ctrl/Cmd + K, Ctrl/Cmd + T** to open the theme picker, choose **Midnight Tide**
 
@@ -55,10 +56,10 @@ This is the VS Code port of the [Midnight Tide JetBrains theme](https://github.c
 ```bash
 # Copy the extension folder to your VS Code extensions directory
 # macOS / Linux:
-cp -r midnight-tide-vscode ~/.vscode/extensions/midnight-tide-1.0.0
+cp -r midnight-tide-vscode ~/.vscode/extensions/midnight-tide-vscode
 
 # Windows:
-xcopy /E /I midnight-tide-vscode %USERPROFILE%\.vscode\extensions\midnight-tide-1.0.0
+xcopy /E /I midnight-tide-vscode %USERPROFILE%\.vscode\extensions\midnight-tide-vscode
 ```
 
 Restart VS Code, then **Ctrl/Cmd + K, Ctrl/Cmd + T** → **Midnight Tide**.
@@ -71,7 +72,7 @@ cd midnight-tide-vscode
 vsce package
 ```
 
-Produces `midnight-tide-1.0.0.vsix` in the current directory.
+Produces `midnight-tide-vscode-<version>.vsix` in the current directory.
 
 ## Companion: file/folder icons
 
