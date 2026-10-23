@@ -10,7 +10,11 @@ The diff view uses muted green for additions and neutral gray for deletions, so 
 
 ![A side-by-side diff in Midnight Tide](docs/screenshots/midnight-tide-diff.png)
 
-Screenshots show the VS Code port; syntax colors come from the theme files themselves.
+The screenshots above are the VS Code port, with syntax colors from the theme files themselves. In IntelliJ IDEA (2025.3, Islands layout):
+
+![Midnight Tide in IntelliJ IDEA](docs/screenshots/intellij-midnight-tide.png)
+
+![Midnight Tide Bioluminescence in IntelliJ IDEA](docs/screenshots/intellij-bioluminescence.png)
 
 | Editor | Folder | Get it |
 | --- | --- | --- |
