@@ -25,6 +25,7 @@
     ]]></description>
 
     <change-notes><![CDATA[
+        <p><b>1.1.1</b> — No changes to the theme; released alongside screenshots for the VS Code listing.</p>
         <p><b>1.1.0</b> — New theme: Midnight Tide Bioluminescence, a more colorful variant with seafoam, peach and orchid syntax colors, italic keywords, a seafoam caret, a deep-teal status bar and highlighted TODO comments.</p>
         <p><b>1.0.4</b> — No changes to the JetBrains theme; released alongside the VS Code port's comment-contrast and terminal-color fixes to keep both versions in step.</p>
         <p><b>1.0.3</b> — Compatibility fixed: the plugin now declares 2025.3+ (it was listed as 2024.1+, where its Islands Dark parent theme does not exist), and it is built and verified against the current IntelliJ Platform.</p>
