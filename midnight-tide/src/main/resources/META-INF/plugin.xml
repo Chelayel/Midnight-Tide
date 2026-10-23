@@ -15,13 +15,17 @@
         <p>Syntax highlighting inherits Islands Dark's tokens unchanged: purple keywords,
         teal identifiers and numbers, sky-blue strings. Selection, gutter, popups, and all
         ~190 other color keys carry over from Islands Dark verbatim.</p>
+        <p><b>Also included: Midnight Tide Bioluminescence.</b> The same night-blue base with
+        glowing accents: seafoam strings, peach numbers, orchid types, italic keywords,
+        a seafoam caret, a deep-teal status bar and highlighted TODO comments.</p>
         <p><b>Setup:</b> Settings → Appearance &amp; Behavior → Appearance → Theme → <b>Midnight Tide</b>.
-        Then Settings → Editor → Color Scheme → <b>Midnight Tide</b>. For the floating-panel
+        Then Settings → Editor → Color Scheme → <b>Midnight Tide</b> (or <b>Midnight Tide Bioluminescence</b>). For the floating-panel
         look, also enable "Different tool window background" in the Appearance settings.</p>
         <p>Requires IDE 2025.3+ for the Islands Dark parent theme.</p>
     ]]></description>
 
     <change-notes><![CDATA[
+        <p><b>1.1.0</b> — New theme: Midnight Tide Bioluminescence, a more colorful variant with seafoam, peach and orchid syntax colors, italic keywords, a seafoam caret, a deep-teal status bar and highlighted TODO comments.</p>
         <p><b>1.0.4</b> — No changes to the JetBrains theme; released alongside the VS Code port's comment-contrast and terminal-color fixes to keep both versions in step.</p>
         <p><b>1.0.3</b> — Compatibility fixed: the plugin now declares 2025.3+ (it was listed as 2024.1+, where its Islands Dark parent theme does not exist), and it is built and verified against the current IntelliJ Platform.</p>
         <p><b>1.0.2</b> — Updated vendor/publisher to Chelayel.</p>
@@ -33,5 +37,6 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <themeProvider id="midnight-tide-dark" path="/themes/MidnightTide.theme.json"/>
+        <themeProvider id="midnight-tide-bioluminescence" path="/themes/MidnightTide-Bioluminescence.theme.json"/>
     </extensions>
 </idea-plugin>

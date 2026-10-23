@@ -43,13 +43,38 @@ This is the VS Code port of the [Midnight Tide JetBrains theme](https://github.c
 
 **Search matches** are saturated teal (`#155E75` for highlights, `#0E7490` for the active match) so they pop against both the editor background and the selection.
 
+## Midnight Tide Bioluminescence
+
+The extension also installs a second, more colorful theme. It keeps the same background, UI and status colors, and adds glowing accents:
+
+| Change | Color |
+|---|---|
+| Strings | `#5EEAD4` seafoam |
+| Numbers and constants | `#FDBA74` peach |
+| Classes and types | `#F0ABFC` orchid |
+| Properties | `#7DD3FC` sky blue |
+| Keywords | `#C084FC` purple, now italic |
+| Cursor | `#5EEAD4` seafoam |
+| Status bar | `#0E3B44` deep teal |
+| Rainbow brackets and guides | seafoam, orchid, peach, blue, purple, sky |
+
+Pick it with **Ctrl/Cmd + K, Ctrl/Cmd + T** → **Midnight Tide Bioluminescence**.
+
+Bracket-pair guides are off in VS Code by default. To see the colored vertical guides, add this to your settings:
+
+```json
+"editor.guides.bracketPairs": "active"
+```
+
+Italic keywords look best with a font that has a cursive italic, such as Victor Mono or Monaspace Radon.
+
 ## Install
 
 ### From `.vsix` file
 
-1. Download `midnight-tide-vscode-1.0.4.vsix` from the [Releases page](https://github.com/Chelayel/Midnight-Tide/releases)
+1. Download `midnight-tide-vscode-1.1.0.vsix` from the [Releases page](https://github.com/Chelayel/Midnight-Tide/releases)
 2. In VS Code: open the Extensions panel, click the **`…`** menu in the top-right, choose **Install from VSIX…**, pick the file
-3. **Ctrl/Cmd + K, Ctrl/Cmd + T** to open the theme picker, choose **Midnight Tide**
+3. **Ctrl/Cmd + K, Ctrl/Cmd + T** to open the theme picker, choose **Midnight Tide** or **Midnight Tide Bioluminescence**
 
 ### From source folder (development)
 
@@ -90,7 +115,8 @@ midnight-tide-vscode/
 ├── package.json                          ← extension manifest
 ├── README.md
 └── themes/
-    └── MidnightTide-color-theme.json         ← ALL the colors + tokens
+    ├── MidnightTide-color-theme.json         ← Midnight Tide: all the colors + tokens
+    └── MidnightTide-Bioluminescence-color-theme.json  ← the Bioluminescence variant
 ```
 
 The single theme JSON has three sections:
