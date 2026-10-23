@@ -2,6 +2,16 @@
 
 A cool-blue dark theme on `#151719` with teal accents and a colorblind-safe diff and error palette. Each port also includes **Midnight Tide Bioluminescence**, a more colorful variant with seafoam, peach and orchid accents. Two ports, one design:
 
+![Midnight Tide in VS Code](docs/screenshots/midnight-tide-editor.png)
+
+![Midnight Tide Bioluminescence in VS Code](docs/screenshots/bioluminescence-editor.png)
+
+The diff view uses muted green for additions and neutral gray for deletions, so changes read clearly without relying on red versus green:
+
+![A side-by-side diff in Midnight Tide](docs/screenshots/midnight-tide-diff.png)
+
+Screenshots show the VS Code port; syntax colors come from the theme files themselves.
+
 | Editor | Folder | Get it |
 | --- | --- | --- |
 | JetBrains (2025.3+, Islands layout) | [`midnight-tide/`](midnight-tide/) | [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/31513-midnight-tide) |

@@ -4,6 +4,14 @@ A blue-dominant dark theme on a `#151719` cool-gray base. Color-vision-safe erro
 
 This is the VS Code port of the [Midnight Tide JetBrains theme](https://github.com/Chelayel/Midnight-Tide) — same palette, same design decisions.
 
+![Midnight Tide in VS Code](https://raw.githubusercontent.com/Chelayel/Midnight-Tide/main/docs/screenshots/midnight-tide-editor.png)
+
+![Midnight Tide Bioluminescence in VS Code](https://raw.githubusercontent.com/Chelayel/Midnight-Tide/main/docs/screenshots/bioluminescence-editor.png)
+
+The diff view uses muted green for additions and neutral gray for deletions, so changes read clearly without relying on red versus green:
+
+![A side-by-side diff in Midnight Tide](https://raw.githubusercontent.com/Chelayel/Midnight-Tide/main/docs/screenshots/midnight-tide-diff.png)
+
 ## Palette
 
 **Backgrounds:**
@@ -72,7 +80,7 @@ Italic keywords look best with a font that has a cursive italic, such as Victor 
 
 ### From `.vsix` file
 
-1. Download `midnight-tide-vscode-1.1.0.vsix` from the [Releases page](https://github.com/Chelayel/Midnight-Tide/releases)
+1. Download `midnight-tide-vscode-1.1.1.vsix` from the [Releases page](https://github.com/Chelayel/Midnight-Tide/releases)
 2. In VS Code: open the Extensions panel, click the **`…`** menu in the top-right, choose **Install from VSIX…**, pick the file
 3. **Ctrl/Cmd + K, Ctrl/Cmd + T** to open the theme picker, choose **Midnight Tide** or **Midnight Tide Bioluminescence**
 
