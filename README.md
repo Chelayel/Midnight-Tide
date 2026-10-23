@@ -1,6 +1,6 @@
 # Midnight Tide
 
-A cool-blue dark theme on `#151719` with teal accents and a colorblind-safe diff and error palette. Two ports, one design:
+A cool-blue dark theme on `#151719` with teal accents and a colorblind-safe diff and error palette. Each port also includes **Midnight Tide Bioluminescence**, a more colorful variant with seafoam, peach and orchid accents. Two ports, one design:
 
 | Editor | Folder | Get it |
 | --- | --- | --- |

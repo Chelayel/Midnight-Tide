@@ -2,7 +2,7 @@
   "name": "midnight-tide-vscode",
   "displayName": "Midnight Tide Theme",
   "description": "A cool-blue dark theme on #151719. Teal accents, deuteranopia-safe diff palette, coral-and-yellow error signals.",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "publisher": "Chelayel",
   "author": { "name": "Chelayel", "url": "https://www.chelayel.com" },
   "license": "MIT",
@@ -18,7 +18,9 @@
     "blue",
     "teal",
     "colorblind",
-    "deuteranopia"
+    "deuteranopia",
+    "bioluminescence",
+    "colorful"
   ],
   "icon": "icon.png",
   "contributes": {
@@ -27,6 +29,11 @@
         "label": "Midnight Tide",
         "uiTheme": "vs-dark",
         "path": "./themes/MidnightTide-color-theme.json"
+      },
+      {
+        "label": "Midnight Tide Bioluminescence",
+        "uiTheme": "vs-dark",
+        "path": "./themes/MidnightTide-Bioluminescence-color-theme.json"
       }
     ]
   },
